@@ -1,5 +1,9 @@
 # CurrencyKeyboardView
 
+[![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fmatvdg%2FCurrencyKeyboardView%2Fbadge%3Ftype%3Dswift-versions)](https://swiftpackageindex.com/matvdg/CurrencyKeyboardView)
+
+[![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fmatvdg%2FCurrencyKeyboardView%2Fbadge%3Ftype%3Dplatforms)](https://swiftpackageindex.com/matvdg/CurrencyKeyboardView)
+
 ## Description
 A simple and lightweight SwiftUI decimalPad keyboard component for handling currency input seamlessly on watchOS 26+
 
