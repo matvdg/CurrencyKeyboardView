@@ -34,7 +34,9 @@ struct WatchCurrencyView: View {
     @State private var amount: Double?
 
     var body: some View {
-        CurrencyKeyboardView(value: $amount)
+        NavigationStack {
+            CurrencyKeyboardView(amount: $amount)
+        }
     }
 }
 #endif

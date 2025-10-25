@@ -4,7 +4,6 @@ import WatchKit
 /// A custom numeric keyboard view designed for watchOS to input currency amounts.
 ///
 /// This view provides a keypad with digits, a decimal separator, and an OK button, allowing users to input currency values.
-/// It works in conjunction with `CurrencyTextField` to enable currency input on watchOS devices.
 /// The keyboard supports toggling between positive and negative values depending on the `signMode`.
 /// It can also display the currency symbol either as a prefix or suffix based on locale conventions.
 ///
@@ -13,9 +12,10 @@ import WatchKit
 /// Usage:
 /// ```swift
 /// @State private var amount: Double?
-/// CurrencyKeyboardView(amount: $amount, signMode: .both, displayCurrency: true)
+/// NavigationStack {
+///     CurrencyKeyboardView(amount: $amount, signMode: .both, displayCurrency: true)
+/// }
 /// ```
-///
 ///
 /// - Parameter amount: The optional `Double` value representing the currency amount to display. If `nil`, a placeholder text is shown.
 /// - Parameter signMode: Defines whether the input allows positive, negative, or both types of values.

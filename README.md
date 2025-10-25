@@ -42,13 +42,15 @@ When you use `.positiveOnly` or `.negativeOnly`, the toggle is automatically hid
 ```swift
 #if os(watchOS)
 import SwiftUI
-import CurrencyTextField
+import CurrencyKeyboardView
 
 struct WatchCurrencyView: View {
     @State private var amount: Double?
 
     var body: some View {
-        CurrencyKeyboardView(value: $amount)
+        NavigationStack {
+            CurrencyKeyboardView(amount: $amount)
+        }
     }
 }
 #endif
@@ -68,7 +70,7 @@ This approach gives you a full numeric keyboard experience on watchOS, which doe
 * ✅ Automatically inserts thousands separators (X XXX XXX.XX)
 * ✅ Prevents leading zeros (e.g. 00 → 0, 06 → 6, 0.6 → 0.6)
 * ✅ Adds a zero before a starting decimal point (.6 → 0.6)
-* ✅ Converts "." to the appropriate decimal separator according to Locale *(on macOS, input comes from a physical keyboard)*
+* ✅ Converts "." to the appropriate decimal separator according to Locale
 * ✅ Limits decimals to two digits (e.g. 0.999 → 0.99)
 * ✅ Includes a toggle to switch between positive and negative values when `signMode = .both`
 
