@@ -5,7 +5,7 @@ A simple and lightweight SwiftUI decimalPad keyboard component for handling curr
 
 CurrencyKeyboardView introduces a fully custom numeric keyboard — .decimalPad is not available natively on watchOS
 
-![Screenshot](https://github.com/matvdg/CurrencyTextFieldKit/blob/8835ee3ab5e3c9d667721bbf28a00fee32250300/Screenshots/demo.png)
+![Screenshot](https://github.com/matvdg/CurrencyKeyboardView/blob/b6965ab524ac76ca994efa133a62285aed9f5170/Screenshots/demo.png)
 
 
 ## Install
@@ -13,7 +13,7 @@ CurrencyKeyboardView introduces a fully custom numeric keyboard — .decimalPad 
 Add the following dependency to your Package.swift:
 ```swift
 dependencies: [
-    .package(url: "https://github.com/matvdg/CurrencyTextField.git", from: "1.0.0")
+    .package(url: "https://github.com/matvdg/CurrencyKeyboardView.git", from: "1.0.0")
 ]
 ```
 
@@ -33,9 +33,7 @@ import CurrencyKeyboardView
 
 ## Usage Example
 
-![Screenshot](https://github.com/matvdg/CurrencyTextFieldKit/blob/9d696ceeb9aa73d30b47283cd9755cb531cc8ec0/Screenshots/watchOS_recording.mov)
-![Screenshot](https://github.com/matvdg/CurrencyTextFieldKit/blob/8835ee3ab5e3c9d667721bbf28a00fee32250300/Screenshots/iOS_recording.mov)
-
+![Screenshot](https://github.com/matvdg/CurrencyKeyboardView/blob/b6965ab524ac76ca994efa133a62285aed9f5170/Screenshots/watchOS_recording.mov)
 
 When `signMode` is set to `.both`, a toggle allows switching between positive and negative values.  
 When you use `.positiveOnly` or `.negativeOnly`, the toggle is automatically hidden, and the sign is forced accordingly.
